@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>crud</title>
+
+    <link rel="stylesheet" href="modal.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <button id="create-user">Create</button>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+
+            <div id="modal-info">
+                
+            </div>
+
+            <div id="modal-buttons"></div>
+        </div>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th onclick="createTable('uid')">uid</th>
+                <th onclick="createTable('firstName')">firstname</th>
+                <th onclick="createTable('lastName')">lastname</th>
+                <th onclick="createTable('city')">city</th>
+                <th onclick="createTable('personalCode')">personal code</th>
+                <th onclick="createTable('phoneNumber')">phone number</th>
+                <th onclick="createTable('position')">position</th>
+            </tr>
+        </thead>
+
+        <tbody></tbody>
+    </table>
+
+    <script src="./modal.js"></script>
+    <script src="./data.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>

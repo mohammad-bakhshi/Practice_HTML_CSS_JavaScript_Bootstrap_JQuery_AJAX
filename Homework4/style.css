@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+table, th, td {
+    border: 1px solid #999;
+    border-collapse: collapse;
+}
+
+th {
+    padding: .5rem 1rem;
+    background-color: #333;
+    color: #fff;
+}
+
+#myModal input {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+}
